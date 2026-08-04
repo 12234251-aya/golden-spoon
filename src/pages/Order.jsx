@@ -1,11 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import PageNavigation from "../components/PageNavigation";
+import { Link } from "react-router-dom";
 
 function Order() {
   return (
     <>
-      <Navbar />
 
       <div className="bg-light">
 
@@ -199,8 +196,6 @@ function Order() {
       </div>
 
 
-      <Footer />
-        <PageNavigation active="order" />
 
     </>
   );

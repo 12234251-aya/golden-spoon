@@ -1,6 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import PageNavigation from "../components/PageNavigation";
 import { Link } from "react-router-dom";
 
 function Menu() {
@@ -65,7 +62,6 @@ function Menu() {
 
   return (
     <>
-      <Navbar />
 
       <div className="bg-light">
         <div className="text-center p-4">
@@ -116,8 +112,6 @@ function Menu() {
         </div>
       </div>
 
-      <Footer />
-      <PageNavigation active="menu" />
     </>
   );
 }

@@ -1,11 +1,9 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import PageNavigation from "../components/PageNavigation";
+
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
     <>
-      <Navbar />
 
       <div className="bg-light">
 
@@ -184,9 +182,6 @@ function Contact() {
 
       </div>
 
-
-      <Footer />
-        <PageNavigation active="contact" />
 
     </>
   );

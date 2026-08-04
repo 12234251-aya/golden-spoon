@@ -1,58 +1,32 @@
 import { Routes, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
 import Menu from "./pages/Menu";
+import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 import Order from "./pages/Order";
 
-
-function Home() {
-  return (
-    <h1 className="text-center mt-5">
-      Home Page
-    </h1>
-  );
-}
-
-
-function Reservation() {
-  return (
-    <h1 className="text-center mt-5">
-      Reservation Page
-    </h1>
-  );
-}
-
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import PageNavigation from "./components/PageNavigation";
 
 function App() {
   return (
-    <Routes>
+    <>
+      <Navbar />
 
-      <Route 
-        path="/" 
-        element={<Home />} 
-      />
-
-      <Route 
-        path="/menu" 
-        element={<Menu />} 
-      />
-
-      <Route 
-        path="/reservation" 
-        element={<Reservation />} 
-      />
-
-      <Route 
-        path="/contact" 
-        element={<Contact />} 
-      />
-
-      <Route 
-        path="/order" 
-        element={<Order />} 
-      />
-
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/order" element={<Order />} />
+      </Routes>
+      
+      <Footer />
+      <PageNavigation />
+      
+    </>
   );
 }
 

@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
+  const showOrderButton = location.pathname ==="/"
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -54,6 +57,11 @@ function Navbar() {
             </li>
 
           </ul>
+          {showOrderButton && (
+            <Link to="/order" className="btn btn-warning ms-3">
+              Order Now
+            </Link>
+          )} 
 
         </div>
       </div>
