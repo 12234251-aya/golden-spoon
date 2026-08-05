@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 function Reservation() {
   const [formData, setFormData] = useState({
@@ -28,9 +26,6 @@ function Reservation() {
 
   return (
     <>
-      <Navbar />
-
-      
       <section
         className="position-relative text-white d-flex align-items-center"
         style={{
@@ -277,8 +272,6 @@ function Reservation() {
 
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

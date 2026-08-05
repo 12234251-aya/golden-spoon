@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const recommendations = {
   Happy: {
@@ -90,8 +88,6 @@ function FoodQuiz() {
 
   return (
     <>
-      <Navbar />
-
       <section className="bg-dark text-white py-5">
         <div className="container text-center">
 
@@ -266,8 +262,6 @@ function FoodQuiz() {
         </div>
 
       </div>
-
-      <Footer />
     </>
   );
 }

@@ -6,9 +6,13 @@ import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 import Order from "./pages/Order";
 import FoodQuiz from "./pages/FoodQuiz";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
+    <>
+    <Navbar />
     <Routes>
 
       <Route 
@@ -43,6 +47,9 @@ function App() {
      <Route 
        path="/food-quiz" element={<FoodQuiz />} />
     </Routes>
+
+    <Footer />
+    </>
   );
 }
 
