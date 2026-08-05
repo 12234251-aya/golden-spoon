@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import PageNavigation from "../components/PageNavigation";
 
 function Contact() {
   return (
@@ -186,7 +185,6 @@ function Contact() {
 
 
       <Footer />
-        <PageNavigation active="contact" />
 
     </>
   );

@@ -1,27 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
 import Menu from "./pages/Menu";
+import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 import Order from "./pages/Order";
-
-
-function Home() {
-  return (
-    <h1 className="text-center mt-5">
-      Home Page
-    </h1>
-  );
-}
-
-
-function Reservation() {
-  return (
-    <h1 className="text-center mt-5">
-      Reservation Page
-    </h1>
-  );
-}
-
+import FoodQuiz from "./pages/FoodQuiz";
 
 function App() {
   return (
@@ -29,6 +13,11 @@ function App() {
 
       <Route 
         path="/" 
+        element={<Home />} 
+      />
+
+      <Route 
+        path="/home" 
         element={<Home />} 
       />
 
@@ -51,7 +40,8 @@ function App() {
         path="/order" 
         element={<Order />} 
       />
-
+     <Route 
+       path="/food-quiz" element={<FoodQuiz />} />
     </Routes>
   );
 }

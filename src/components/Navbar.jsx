@@ -42,6 +42,12 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
+              <Link className="nav-link" to="/food-quiz">
+                Food Quiz
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link className="nav-link" to="/reservation">
                 Book a Table
               </Link>

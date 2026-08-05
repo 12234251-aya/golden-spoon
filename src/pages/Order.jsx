@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import PageNavigation from "../components/PageNavigation";
 
 function Order() {
   return (
@@ -200,7 +199,6 @@ function Order() {
 
 
       <Footer />
-        <PageNavigation active="order" />
 
     </>
   );
