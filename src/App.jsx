@@ -5,7 +5,7 @@ import Menu from "./pages/Menu";
 import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 import Order from "./pages/Order";
-import FoodQuiz from "./pages/FoodQuiz";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -44,8 +44,7 @@ function App() {
         path="/order" 
         element={<Order />} 
       />
-     <Route 
-       path="/food-quiz" element={<FoodQuiz />} />
+     
     </Routes>
 
     <Footer />
